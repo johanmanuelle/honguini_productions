@@ -10,9 +10,11 @@ filename = f"{config.app_name}/{config.app_name}.py"
 
 class State(rx.State):
     """The app state."""
-
+@rx.page(title="Honguini Productions",description="Tu servicio de impresion 3D bajo demanda y costura artesanal de confianza")
 
 def index() -> rx.Component:
+    
+    
     return rx.center(
         #rx.theme_panel(),
         
