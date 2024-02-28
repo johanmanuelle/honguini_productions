@@ -8,8 +8,8 @@ docs_url = ""
 filename = f"{config.app_name}/{config.app_name}.py"
 
 
-class State(rx.State):
-    """The app state."""
+#class State(rx.State): #esto es lo que maneja el backend
+#    """The app state."""
 @rx.page(title="Honguini Productions",description="Tu servicio de impresion 3D bajo demanda y costura artesanal de confianza")
 
 def index() -> rx.Component:
