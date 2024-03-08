@@ -9,25 +9,26 @@ def navbar()-> rx.Component:
             rx.image(src="/images/Honguini-01.png", width="2em"),
             rx.link(
                 rx.box(
-                rx.text("Honguini", as_="span", color=Color.PRIMARY.value),
-                rx.text("Productions", as_="span", color=Color.SECONDARY.value),
+                rx.text("Honguini", as_="span", color=Color.ORANGE.value),
+                rx.text("Productions", as_="span", color=Color.ORANGE_LIGHT.value),
                 style=styles.navbar_title_style
                 ),
-            href=""
+            href="https://honguiniproductions.com"
             ),
         ),
         rx.spacer(),
         rx.link(
+            "Inicio",
+            href="/",
+        ),
+        rx.link(
             "Productos",
-            href="",
+            href="/productos",
         ),
+
         rx.link(
-            "Mision",
-            href="",
-        ),
-        rx.link(
-            "contactanos",
-            href="",
+            "Contáctanos",
+            href="mailto:info@honguiniproductions.com",
         ),
         position="sticky",
         bg=Color.CONTENT.value,

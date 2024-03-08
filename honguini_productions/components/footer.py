@@ -6,7 +6,7 @@ import datetime
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src="images/Honguini-01.png",
+            src="/images/Honguini-01.png",
             height=Size.VERY_BIG.value,
             width=Size.VERY_BIG.value,
             alt="Logotipo de Honguni Productions. Una \"eme\" entre llaves."
@@ -23,24 +23,24 @@ def footer() -> rx.Component:
                 padding_top=Size.DEFAULT.value
             ),
             href="",
-            is_external=True,
+            is_external=False,
             font_size=Size.MEDIUM.value
         ),
         rx.link(
             rx.hstack(
                 rx.image(
-                    src="/icons/github.svg",
+                    src="/icons/icons8-planet-50.png",
                     height=Size.LARGE.value,
                     width=Size.LARGE.value
                 ),
                 rx.text(
-                    "BUILDING SOFTWARE WITH ♥ FROM CALI TO THE WORLD.",
+                    "ESTAMOS COMPROMETIDOS CON EL CUIDADO DEL PLANETA!.",
                     font_size=Size.MEDIUM.value,
                     margin_top=Size.ZERO.value
                 ),
             ),
             href="",
-            is_external=True
+            is_external=False
         ),
 
         align="center",

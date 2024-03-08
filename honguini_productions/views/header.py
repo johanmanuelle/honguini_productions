@@ -54,8 +54,8 @@ def header() -> rx.Component:
         ),
         rx.text(
             f"""
-            Somos una empresa dedicada a la impresion 3D bajo demanda, tambien contamos
-            con disenhos ya definidos que comercializamos bajo pedido, por otro lado tenemos
+            Somos una empresa dedicada a la impresión 3D bajo demanda, también contamos
+            con diseños ya definidos que comercializamos bajo pedido, por otro lado tenemos
             costura artesanal de alta calidad, asi que cuidao!
             """,
             font_size=Size.DEFAULT.value,

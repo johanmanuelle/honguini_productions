@@ -7,6 +7,8 @@ class Color(Enum):
     BACKGROUND = "#0C151D"
     CONTENT = "#171F26",
     PURPLE = "#9146ff"
+    ORANGE= "#E65E12"
+    ORANGE_LIGHT= "#E6A012"
 
 
 class TextColor(Enum):

@@ -14,41 +14,25 @@ def index_links() -> rx.Component:
         link_button(
             "Nuestros Productos",
             "Mira los productos hechos con impresion 3D que tenemos en Stock",
-            "/icons/code.svg",
+            "/icons/icons8-products-50.png",
             Route.PRODUCTS.value,
             False,
             Color.SECONDARY.value
         ),
-        link_button(
-            "Mision",
-            "Que soluciones queremos ofrecer por medio de nuestros productos?",
-            "/icons/twitch.svg",
-            const.FACEBOOK_URL
-        ),
-        link_button(
-            "Discord",
-            "El chat y los grupos de estudio de la comunidad",
-            "/icons/discord.svg",
-            const.GITHUB_URL
-        ),
-        link_button(
-            "YouTube",
-            "Tutoriales sobre desarrollo de software semanales",
-            "/icons/youtube.svg",
-            const.GITHUB_URL
-        ),
-        link_button(
-            "YouTube | canal secundario",
-            "Emisiones en directo destacadas",
-            "/icons/youtube.svg",
-            const.GITHUB_URL
-        ),
+        
+        #link_button(
+        #    "Mision",
+        #    "Que soluciones queremos ofrecer por medio de nuestros productos?",
+        #    "/icons/icons8-mission-50.png",
+        #    const.FACEBOOK_URL
+        #),
+        
         title("Contacto"),
         link_button(
             "Whatsapp",
             "Respuesta rápida y con preferencia",
-            "/icons/checkemail.svg",
-            const.GITHUB_URL
+            "/icons/icons8-whatsapp.svg",
+            const.WHATSAPP_URL
         ),
         link_button(
             "Email",
