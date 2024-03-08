@@ -1,46 +1,42 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
 
 from rxconfig import config
-
+from honguini_productions.components.navbar import navbar
+from honguini_productions.views.header import header
+from honguini_productions.views.index_links import index_links
+from honguini_productions.components.footer import footer
+from honguini_productions.styles.styles import Size
+import honguini_productions.styles.styles as styles
 import reflex as rx
 
-docs_url = ""
-filename = f"{config.app_name}/{config.app_name}.py"
+
 
 
 #class State(rx.State): #esto es lo que maneja el backend
 #    """The app state."""
-@rx.page(title="Honguini Productions",description="Tu servicio de impresion 3D bajo demanda y costura artesanal de confianza")
+@rx.page(title="Honguini Productions",description="Tu servicio de impresion 3D bajo demanda y costura artesanal de confianza",image="favicon.ico")
 
 def index() -> rx.Component:
-    
-    
-    return rx.center(
-        #rx.theme_panel(),
-        
-        rx.vstack(
-            rx.heading("Bienvenido a Honguini Productions!", size="9"),
-            rx.text("algo supremamante fest esta por venir, asi que cuidao! "),
-            rx.button(
-                "Danos una espera!",
-                on_click=lambda: rx.redirect(docs_url),
-                size="4",
-            ),
-            align="center",
-            spacing="7",
-            font_size="2em",
+     return rx.box(
+        #utils.lang(),
+        navbar(),
+        rx.center(
+            rx.vstack(
+                header(),
+                index_links(),
+                #sponsors(),
+                max_width=styles.MAX_WIDTH,
+                width="100%",
+                margin_y=Size.BIG.value,
+                padding=Size.BIG.value
+            )
         ),
-        height="100vh",
+        footer()
     )
-#<Theme appearance="dark" accentColor="yellow" panelBackground="solid" radius="large">
-#<Theme appearance="dark" accentColor="yellow" radius="large">
+    
+
 app = rx.App(
-    theme=rx.theme(
-        appearance="dark",
-        has_background=True,
-        panelBackground="solid",
-        radius="large",
-        accent_color="yellow",
+    stylesheets=styles.STYLESHEETS,
+    style=styles.BASE_STYLE,
     )
-)
+
 app.add_page(index)
