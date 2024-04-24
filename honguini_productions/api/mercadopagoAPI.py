@@ -30,16 +30,16 @@ class mercadopagoAPI:
 
     request_options = mercadopago.config.RequestOptions()
     request_options.custom_headers = {
-        'x-idempotency-key': 'f856a8s46as895324'
+        'x-idempotency-key': ''
     }
 
     payment_data = {
         "transaction_amount": 100,
-        "token": 'ff8080814c11e237014c1ff593b57b4d',
+        "token": '',
         "installments": 1,
         "payer": {
             "type": "customer",
-            "id": "123456789-jxOV430go9fx2e"
+            "id": ""
         }
     }
 
