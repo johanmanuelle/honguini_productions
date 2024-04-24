@@ -43,6 +43,16 @@ def header() -> rx.Component:
                         const.TIKTOK_URL,
                         "TikTok"
                     ),
+                    link_icon(
+                        "/icons/facebook.svg",
+                        const.FACEBOOK_URL,
+                        "Facebook"
+                    ),
+                    link_icon(
+                        "/icons/whatsapp.svg",
+                        const.WHATSAPP_URL,
+                        "Whastsapp"
+                    ),
                     spacing=Spacing.LARGE.value,
                     padding_top=Size.SMALL.value
                 ),

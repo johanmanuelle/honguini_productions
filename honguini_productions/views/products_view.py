@@ -3,6 +3,7 @@ from honguini_productions.components.products import products
 from honguini_productions.styles.styles import Spacing
 from honguini_productions.components.title import title
 
+
 def products_views () -> rx.Component:
     return rx.vstack(
          title("Soportes PS4 FAT/Slim/Pro"),
@@ -29,6 +30,15 @@ def products_views () -> rx.Component:
             ),
 
             title("$33.000 COP Envio Gratis Toda Colombia"),
+            #rx.script(
+            #    src="https://sdk.mercadopago.com/js/v2"
+                
+            #),
+            #rx.html(
+            #    "<script>const mp = new MercadoPago('TEST-0cc52ad8-1d45-4308-97b9-64b31e7e08fe');</script>"
+                
+            #),
+            
             width="100%",
             spacing=Spacing.DEFAULT.value
                                
