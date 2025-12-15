@@ -1,3 +1,3 @@
-reflex==0.4.7
+reflex==0.8.22
 mercadopago
 python-dotenv
